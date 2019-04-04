@@ -88,11 +88,11 @@ export function saveMovie(movie) {
     movies.push(movieInDb);
   }
 
-  return movieInDb;
+  return movies;
 }
 
 export function deleteMovie(id) {
   let movieInDb = movies.find(m => m._id === id);
   movies.splice(movies.indexOf(movieInDb), 1);
-  return movieInDb;
+  return movies;
 }
